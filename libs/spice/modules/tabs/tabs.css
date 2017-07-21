@@ -1,0 +1,36 @@
+@charset "utf-8";
+.spice-md-tabs-content {
+  position: relative;
+}
+.spice-md-tabs-item .spice-md-tabs-item-title {
+  display: none;
+}
+.spice-md-tabs-item .spice-md-tabs-item-content {
+  display: none;
+  position: relative;
+}
+.spice-md-tabs-item:first-child .spice-md-tabs-item-content {
+  display: block;
+}
+.tinyscrollbar .viewport {
+  height: auto;
+  max-height: 200px;
+}
+.tinyscrollbar .scrollbar.disable {
+  display: none;
+}
+.tinyscrollbar .viewport.is-inhert {
+  height: auto;
+  max-height: inherit;
+}
+@media (max-width: 768px) {
+  .spice-md-tabs-title {
+    display: none;
+  }
+  .spice-md-tabs-item .spice-md-tabs-item-title {
+    display: block;
+  }
+  .spice-md-tabs-item .spice-md-tabs-item-content {
+    display: none;
+  }
+}

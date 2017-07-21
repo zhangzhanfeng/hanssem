@@ -1,0 +1,21 @@
+img.thumbnail-animate,
+.thumbnail-animate img {
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  position: relative;
+}
+img.thumbnail-animate:hover,
+.thumbnail-animate img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 1;
+}
+img.thumbnail-circle,
+.thumbnail-circle img {
+  border-radius: 50%;
+}

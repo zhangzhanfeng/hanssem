@@ -1,0 +1,468 @@
+@charset "utf-8";
+.datetime-body .datetime-box,
+.datetime-body .datetime-box * {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.datetime-icon,
+.datetime-icon-default {
+  height: 22px;
+  line-height: 22px;
+  padding-right: 20px;
+  border: 1px solid #C6C6C6;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-color: #fff;
+  outline: 0;
+}
+.datetime-icon-default {
+  background-image: url(../images/icon.png);
+}
+.datetime-body .datetime-box {
+  width: 300px;
+  font: 12px '\5B8B\4F53';
+  z-index: 99999999;
+  *margin: -2px 0 0 -2px;
+  *overflow: hidden;
+  _margin: 0;
+  _position: absolute!important;
+  background-color: #fff;
+}
+.datetime-body .datetime-box li {
+  list-style: none;
+}
+.datetime-body .datetime-box .datetime-void {
+  cursor: text!important;
+}
+.datetime-body .datetime-box a,
+.datetime-body .datetime-box a:hover {
+  text-decoration: none;
+  blr: expression(this.onFocus=this.blur());
+  cursor: pointer;
+}
+.datetime-body .datetime-box a:hover {
+  text-decoration: none;
+}
+.datetime-body .datetime-box cite,
+.datetime-body .datetime-box label {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 5px;
+  border-style: dashed;
+  border-color: transparent;
+  overflow: hidden;
+  cursor: pointer;
+}
+.datetime-body .datetime-box .datetime-yms,
+.datetime-body .datetime-box .datetime-time {
+  display: none;
+}
+.datetime-body .datetime-box .datetime-show {
+  display: block;
+}
+.datetime-body .datetime-box input {
+  outline: 0;
+  font-size: 14px;
+  background-color: #fff;
+}
+.datetime-body .datetime-top {
+  position: relative;
+  height: 26px;
+  padding: 5px;
+  *width: 100%;
+  z-index: 99;
+}
+.datetime-body .datetime-ym {
+  position: relative;
+  float: left;
+  height: 24px;
+  cursor: pointer;
+}
+.datetime-body .datetime-ym input {
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+.datetime-body .datetime-ym .datetime-yms {
+  position: absolute;
+  left: -1px;
+  top: 24px;
+  height: 181px;
+}
+.datetime-body .datetime-y {
+  width: 151px;
+  margin-right: 5px;
+}
+.datetime-body .datetime-y span {
+  display: block;
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  margin-right: 15px;
+  text-indent: 5px;
+  width: 94px;
+}
+.datetime-body .datetime-y .datetime-yms {
+  width: 100%;
+  text-align: center;
+}
+.datetime-body .datetime-y .datetime-yms a {
+  position: relative;
+  display: block;
+  height: 20px;
+}
+.datetime-body .datetime-y .datetime-yms ul {
+  height: 139px;
+  padding: 0;
+  *overflow: hidden;
+}
+.datetime-body .datetime-y .datetime-yms ul li {
+  float: left;
+  width: 75px;
+  height: 20px;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.datetime-body .datetime-m {
+  width: 130px;
+}
+.datetime-body .datetime-m .datetime-yms {
+  width: 100%;
+  padding: 0;
+}
+.datetime-body .datetime-m span {
+  width: 73px;
+  display: block;
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  margin-right: 15px;
+  text-indent: 5px;
+}
+.datetime-body .datetime-m .datetime-yms span {
+  display: block;
+  float: left;
+  width: 57px;
+  margin: 5px 0 0 5px;
+  line-height: 24px;
+  text-align: center;
+  _display: inline;
+  text-indent: 0;
+}
+.datetime-body .datetime-choose {
+  display: block;
+  float: left;
+  position: relative;
+  width: 20px;
+  height: 24px;
+}
+.datetime-body .datetime-choose cite,
+.datetime-body .datetime-tab cite {
+  left: 50%;
+  top: 50%;
+}
+.datetime-body .datetime-chtop cite {
+  margin: -7px 0 0 -5px;
+  border-bottom-style: solid;
+}
+.datetime-body .datetime-chdown cite,
+.datetime-body .datetime-ym label {
+  top: 50%;
+  margin: -2px 0 0 -5px;
+  border-top-style: solid;
+}
+.datetime-body .datetime-chprev cite {
+  margin: -5px 0 0 -7px;
+}
+.datetime-body .datetime-chnext cite {
+  margin: -5px 0 0 -2px;
+}
+.datetime-body .datetime-ym label {
+  right: 28px;
+}
+.datetime-body .datetime-table {
+  width: 290px;
+  margin: 0 5px;
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+.datetime-body .datetime-table td {
+  width: 31px;
+  height: 19px;
+  line-height: 19px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 12px;
+}
+.datetime-body .datetime-table thead {
+  height: 22px;
+  line-height: 22px;
+}
+.datetime-body .datetime-table thead th {
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+}
+.datetime-body .datetime-bottom {
+  position: relative;
+  height: 22px;
+  line-height: 20px;
+  padding: 5px;
+  font-size: 12px;
+}
+.datetime-body .datetime-bottom #datetime-hms {
+  position: relative;
+  z-index: 1;
+  float: left;
+}
+.datetime-body .datetime-time {
+  position: absolute;
+  left: 5px;
+  bottom: 26px;
+  width: 129px;
+  height: 125px;
+  *overflow: hidden;
+}
+.datetime-body .datetime-time .datetime-hmsno {
+  padding: 5px 0 0 5px;
+}
+.datetime-body .datetime-time .datetime-hmsno span {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 19px;
+  line-height: 19px;
+  text-align: center;
+  cursor: pointer;
+  *margin-bottom: -5px;
+}
+.datetime-body .datetime-time1 {
+  width: 228px;
+  height: 154px;
+}
+.datetime-body .datetime-time1 .datetime-hmsno {
+  padding: 6px 0 0 8px;
+}
+.datetime-body .datetime-time1 .datetime-hmsno span {
+  width: 21px;
+  height: 20px;
+  line-height: 20px;
+}
+.datetime-body .datetime-msg {
+  left: 49px;
+  bottom: 67px;
+  width: 141px;
+  height: auto;
+  overflow: hidden;
+}
+.datetime-body .datetime-msg p {
+  padding: 5px 10px;
+}
+.datetime-body .datetime-bottom li {
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  border-right: none;
+  font-weight: 900;
+}
+.datetime-body .datetime-bottom .datetime-sj {
+  width: 33px;
+  text-align: center;
+  font-weight: 400;
+}
+.datetime-body .datetime-bottom span {
+  float: left;
+  width: 21px;
+  height: 20px;
+  line-height: 20px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+}
+.datetime-body .datetime-bottom .datetime-hsmtex {
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+.datetime-body .datetime-bottom .datetime-hsmtex span {
+  position: absolute;
+  width: 20px;
+  top: 0;
+  right: 0px;
+  cursor: pointer;
+}
+.datetime-body .datetime-bottom .datetime-hsmtex span:hover {
+  font-size: 14px;
+}
+.datetime-body .datetime-bottom .datetime-btn {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.datetime-body .datetime-bottom .datetime-btn a {
+  float: left;
+  height: 20px;
+  padding: 0 6px;
+  _padding: 0 5px;
+}
+.datetime-body .datetime-bottom .datetime-v {
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  font-family: Courier;
+  z-index: 0;
+}
+.datetime-icon {
+  border: 1px solid #C6C6C6;
+  background-image: url(icon.png);
+}
+.datetime-body .datetime-box,
+.datetime-body .datetime-ym,
+.datetime-body .datetime-ym .datetime-yms,
+.datetime-body .datetime-table,
+.datetime-body .datetime-table td,
+.datetime-body .datetime-bottom #datetime-hms,
+.datetime-body .datetime-time,
+.datetime-body .datetime-bottom .datetime-btn a {
+  border: 1px solid #ccc;
+}
+.datetime-body .datetime-y .datetime-yms a,
+.datetime-body .datetime-choose,
+.datetime-body .datetime-table thead,
+.datetime-body .datetime-bottom .datetime-hsmtex {
+  background-color: #F6F6F6;
+}
+.datetime-body .datetime-box,
+.datetime-body .datetime-ym .datetime-yms,
+.datetime-body .datetime-time {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.datetime-body .datetime-box {
+  border-top: none;
+  border-bottom: none;
+  background-color: #fff;
+  color: #333;
+}
+.datetime-body .datetime-box span {
+  color: #333;
+}
+.datetime-body .datetime-box .datetime-void {
+  color: #ccc!important;
+}
+.datetime-body .datetime-box .datetime-void:hover {
+  background-color: #fff !important;
+}
+.datetime-body .datetime-box a,
+.datetime-body .datetime-box a:hover {
+  color: #333;
+}
+.datetime-body .datetime-box a:hover {
+  color: #666;
+}
+.datetime-body .datetime-click {
+  background-color: #eee!important;
+}
+.datetime-body .datetime-top {
+  border-top: 1px solid #C6C6C6;
+}
+.datetime-body .datetime-ym .datetime-yms {
+  border: 1px solid #C6C6C6;
+  background-color: #fff;
+}
+.datetime-body .datetime-y .datetime-yms a {
+  border-bottom: 1px solid #C6C6C6;
+}
+.datetime-body .datetime-y .datetime-yms .datetime-chdown {
+  border-top: 1px solid #C6C6C6;
+  border-bottom: none;
+}
+.datetime-body .datetime-choose {
+  border-left: 1px solid #C6C6C6;
+}
+.datetime-body .datetime-chprev {
+  border-left: none;
+  border-right: 1px solid #C6C6C6;
+}
+.datetime-body .datetime-choose:hover,
+.datetime-body .datetime-y .datetime-yms a:hover {
+  background-color: #fff;
+}
+.datetime-body .datetime-chtop cite {
+  border-bottom-color: #666;
+}
+.datetime-body .datetime-chdown cite,
+.datetime-body .datetime-ym label {
+  border-top-color: #666;
+}
+.datetime-body .datetime-chprev cite {
+  border-right-style: solid;
+  border-right-color: #666;
+}
+.datetime-body .datetime-chnext cite {
+  border-left-style: solid;
+  border-left-color: #666;
+}
+.datetime-body .datetime-table td {
+  border: none;
+  height: 21px!important;
+  line-height: 21px!important;
+  background-color: #fff;
+}
+.datetime-body .datetime-table .datetime-nothis {
+  color: #999;
+}
+.datetime-body .datetime-table thead {
+  height: 21px!important;
+  line-height: 21px!important;
+}
+.datetime-body .datetime-table thead th {
+  border-bottom: 1px solid #ccc;
+}
+.datetime-body .datetime-bottom {
+  border-bottom: 1px solid #C6C6C6;
+}
+.datetime-body .datetime-bottom #datetime-hms {
+  background-color: #fff;
+}
+.datetime-body .datetime-time {
+  background-color: #fff;
+}
+.datetime-body .datetime-bottom .datetime-sj {
+  border-right: 1px solid #C6C6C6;
+  background-color: #F6F6F6;
+}
+.datetime-body .datetime-bottom input {
+  background-color: #fff;
+}
+.datetime-body .datetime-bottom .datetime-hsmtex {
+  border-bottom: 1px solid #C6C6C6;
+}
+.datetime-body .datetime-bottom .datetime-btn {
+  border-right: 1px solid #C6C6C6;
+}
+.datetime-body .datetime-bottom .datetime-v {
+  color: #999;
+}
+.datetime-body .datetime-bottom .datetime-btn a {
+  border-right: none;
+  background-color: #F6F6F6;
+}
+.datetime-body .datetime-bottom .datetime-btn a:hover {
+  color: #000;
+  background-color: #fff;
+}
+.datetime-body .datetime-m .datetime-yms span:hover,
+.datetime-body .datetime-y .datetime-yms ul li:hover,
+.datetime-body .datetime-table td:hover,
+.datetime-body .datetime-time .datetime-hmsno span:hover {
+  background-color: #F3F3F3;
+}

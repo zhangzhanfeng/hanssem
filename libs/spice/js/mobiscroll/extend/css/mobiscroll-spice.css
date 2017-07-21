@@ -1,0 +1,232 @@
+/* Android ICS skin */
+.spice-mobiscroll .dw {
+  padding: 0;
+  color: #31b6e7;
+  background: #292829;
+}
+.spice-mobiscroll .dw .dwwc,
+.spice-mobiscroll .dw .dwwl,
+.spice-mobiscroll .dw .dww,
+.spice-mobiscroll .dw .dwb,
+.spice-mobiscroll .dw .dwpm .dww {
+  background: none;
+}
+.spice-mobiscroll .dwwr {
+  padding: 0;
+}
+.spice-mobiscroll .dwc {
+  margin: 0;
+  padding: 30px 10px 1px 10px;
+}
+.spice-mobiscroll .dwhl {
+  padding: 1px 10px;
+}
+.spice-mobiscroll .dwv {
+  height: 36px;
+  line-height: 36px;
+  padding: 0;
+  border-bottom: 2px solid #31b6e7;
+  font-size: 14px;
+}
+.spice-mobiscroll .dwwl {
+  margin: 0 2px;
+}
+.spice-mobiscroll .dww,
+.spice-mobiscroll .dw .dwpm .dwwl,
+.spice-mobiscroll .dw .dwpm .dww {
+  border: 0;
+}
+.spice-mobiscroll .dww .dw-li {
+  color: #fff;
+  font-size: 14px;
+  text-shadow: none;
+}
+.spice-mobiscroll .dww .dw-li.dw-hl {
+  background: #31b6e7;
+  background: rgba(49, 182, 231, 0.5);
+}
+.spice-mobiscroll .dwwo {
+  background: linear-gradient(#282828 0%, rgba(40, 40, 40, 0) 52%, rgba(40, 40, 40, 0) 48%, #282828 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#282828), color-stop(0.52, rgba(40, 40, 40, 0)), color-stop(0.48, rgba(40, 40, 40, 0)), to(#282828));
+  background: -moz-linear-gradient(#282828 0%, rgba(40, 40, 40, 0) 52%, rgba(40, 40, 40, 0) 48%, #282828 100%);
+  background: -o-linear-gradient(#282828 0%, rgba(40, 40, 40, 0) 52%, rgba(40, 40, 40, 0) 48%, #282828 100%);
+}
+.spice-mobiscroll .dw .dwwb {
+  background: #292829;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.spice-mobiscroll .dwwb span {
+  display: none;
+}
+.spice-mobiscroll .dwwb:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -8px;
+  margin-left: -8px;
+  color: #7e7e7e;
+  width: 0;
+  height: 0;
+  border-width: 8px;
+  border-style: solid;
+  content: '';
+}
+.spice-mobiscroll .dwwbm {
+  top: 0;
+  bottom: auto;
+}
+.spice-mobiscroll .dwwbp {
+  bottom: 0;
+  top: auto;
+}
+.spice-mobiscroll .dwwbm:after {
+  border-color: transparent transparent #7e7e7e transparent;
+}
+.spice-mobiscroll .dwwbp:after {
+  border-color: #7e7e7e transparent transparent transparent;
+}
+.spice-mobiscroll .dw .dwwl .dwb-a {
+  background: #292829;
+}
+.spice-mobiscroll .dwwbm.dwb-a:after {
+  border-color: transparent transparent #319abd transparent;
+}
+.spice-mobiscroll .dwwbp.dwb-a:after {
+  border-color: #319abd transparent transparent transparent;
+}
+.spice-mobiscroll .dw .dwwol {
+  width: 60%;
+  left: 20%;
+  height: 36px;
+  border-top: 2px solid #31b6e7;
+  border-bottom: 2px solid #31b6e7;
+  margin-top: -20px;
+  display: block;
+}
+.spice-mobiscroll .dwbc {
+  border-top: 1px solid #424542;
+  padding: 0;
+}
+.spice-mobiscroll .dw .dwb {
+  height: 36px;
+  line-height: 36px;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  text-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -webkit-box-shadow: none;
+}
+.spice-mobiscroll .dw .dwb-a {
+  background: #29799c;
+}
+.spice-mobiscroll .dwb-s .dwb,
+.spice-mobiscroll .dwb-n .dwb {
+  border-right: 1px solid #424542;
+}
+/* Docked */
+.spice-mobiscroll.dw-bottom .dw,
+.spice-mobiscroll.dw-top .dw {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* Multiple select */
+.spice-mobiscroll .dwwms .dwwol {
+  display: none;
+}
+.spice-mobiscroll .dwwms .dw-li {
+  padding-left: 5px;
+  padding-right: 36px;
+}
+.spice-mobiscroll .dwwms .dw-li:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: auto;
+  right: 10px;
+  width: 14px;
+  height: 14px;
+  margin-top: -9px;
+  color: #31b6e7;
+  line-height: 14px;
+  border: 1px solid #424542;
+  text-shadow: 0 0 5px #29799c;
+}
+.spice-mobiscroll .dwwms .dw-msel:after {
+  content: '✔';
+}
+/* Light version */
+.spice-mobiscroll.light .dw {
+  background: #f5f5f5;
+}
+.spice-mobiscroll.light .dww .dw-li {
+  color: #000;
+}
+.spice-mobiscroll.light .dwwo {
+  background: linear-gradient(#f5f5f5 0%, rgba(245, 245, 245, 0) 52%, rgba(245, 245, 245, 0) 48%, #f5f5f5 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#f5f5f5), color-stop(0.52, rgba(245, 245, 245, 0)), color-stop(0.48, rgba(245, 245, 245, 0)), to(#f5f5f5));
+  background: -moz-linear-gradient(#f5f5f5 0%, rgba(245, 245, 245, 0) 52%, rgba(245, 245, 245, 0) 48%, #f5f5f5 100%);
+  background: -o-linear-gradient(#f5f5f5 0%, rgba(245, 245, 245, 0) 52%, rgba(245, 245, 245, 0) 48%, #f5f5f5 100%);
+}
+.spice-mobiscroll.light .dw .dwwb {
+  background: #f5f5f5;
+  color: #f5f5f5;
+}
+.spice-mobiscroll.light .dwbc {
+  border-top: 1px solid #dbdbdb;
+}
+.spice-mobiscroll.light .dwb {
+  color: #000;
+}
+.spice-mobiscroll.light .dwb-a {
+  color: #fff;
+}
+.spice-mobiscroll.light .dwb-s .dwb,
+.spice-mobiscroll.light .dwb-n .dwb {
+  border-right: 1px solid #dbdbdb;
+}
+/* Bubble positioning */
+.spice-mobiscroll .dw-bubble-bottom .dw-arr {
+  border-color: transparent transparent #292829 transparent;
+}
+.spice-mobiscroll .dw-bubble-top .dw-arr {
+  border-color: #292829 transparent transparent transparent;
+}
+/* Bubble positioning */
+.spice-mobiscroll.light .dw-bubble-bottom .dw-arr {
+  border-color: transparent transparent #f5f5f5 transparent;
+}
+.spice-mobiscroll.light .dw-bubble-top .dw-arr {
+  border-color: #f5f5f5 transparent transparent transparent;
+}
+/* Multiple select */
+.spice-mobiscroll.light .dwwms .dw-li:after {
+  text-shadow: 0 0 5px #31b6e7;
+}
+.spice-mobiscroll .dwc {
+  display: block;
+}
+.spice-mobiscroll table {
+  width: 100%;
+  display: block;
+}
+.spice-mobiscroll tbody {
+  width: 100%;
+  display: block;
+}
+.spice-mobiscroll tr {
+  width: 100%;
+  display: block;
+}
+.spice-mobiscroll td {
+  display: inline-block;
+  width: 33.33333333%;
+  overflow: hidden;
+}
+.spice-mobiscroll .dw-i {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

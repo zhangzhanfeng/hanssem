@@ -1,0 +1,49 @@
+@charset "utf-8";
+.btn-bars {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.btn-bars:hover {
+  background-color: transparent;
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    /* .navbar-header-slide{
+			width: 100%;
+			left: 0;
+		    top: 100%;
+		    z-index: @header-zIndex-sm;
+		} */
+  }
+  .header .navbar-menu {
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+  }
+  .header .navbar-header-scroll-right,
+  .header .navbar-header-scroll-right-part {
+    width: 245px;
+    right: -245px;
+    z-index: 100;
+    overflow: hidden;
+    overflow-y: auto;
+    position: fixed;
+    height: 100%;
+  }
+  .header .navbar-header-scroll-left,
+  .header .navbar-header-scroll-left-part {
+    width: 245px;
+    left: -245px;
+    z-index: 100;
+    overflow: hidden;
+    overflow-y: auto;
+    position: fixed;
+    height: 100%;
+  }
+  .header .nav-pills li {
+    display: block;
+  }
+}

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+        <!-- 避免IE使用兼容模式 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <!-- windows phone 点击无高光 -->
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- 启用360浏览器的极速模式(webkit) -->
+        <meta name="renderer" content="webkit" />
+        <meta name="MobileOptimized" content="320" />
+        <meta http-equiv="Cache-Control" content="no-siteapp" />
+        <meta content="telephone=no" name="format-detection" />
+        <title>hanssem中国官网</title>
+
+         <!-- 公共 CSS 部分开始 -->
+        <link rel="stylesheet" href="libs/spice/css/spice.css" />
+        <!-- 字体图标样式，不需要时可不引用 -->
+        <link rel="stylesheet" href="libs/spice/css/spice.icon.css" />
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" href="libs/spice/css/spice.ie8.min.css" />
+        <![endif]-->
+        <!--[if lte IE 7]>
+            <link rel="stylesheet" href="libs/spice/css/spice.ie7.min.css" />
+        <![endif]-->
+        <!-- 公共 CSS 部分结束 -->
+
+        <!-- 公共 JS 部分开始 -->
+        <script type="text/javascript" src="libs/jquery/jquery.js"></script>
+        <script type="text/javascript" src="libs/iscroll/iscroll.js"></script>
+        <script type="text/javascript" src="libs/spice/js/jquery.spice.js"></script>
+        <script type="text/javascript" src="libs/spice/js/kvScroll/jquery.kvScroll.js"></script>
+
+        <script type="text/javascript">
+            (function($){
+                $.spice.init({
+                    throttleTime: 100
+                    , debounceTime: 300
+                });
+            })(jQuery);
+        </script>
+        <script type="text/javascript" src="libs/spice/js/jquery.spice.tools.js"></script>
+        <!--[if lt IE 9]>
+            <script type="text/javascript" src="libs/respond/respond.min.js"></script>
+            <script type="text/javascript" src="libs/html5shiv/html5shiv.min.js"></script>
+        <![endif]-->
+        <!-- 字体图标js，兼容低版本浏览器，不需要时可不引用 -->
+        <!--[if lte IE 7]>
+            <script type="text/javascript" src="libs/spice/js/jquery.spice.ie7.min.js"></script>
+        <![endif]-->
+        <!-- 公共 JS 部分结束 -->
+        <link rel="stylesheet/less" href="index.less">
+        <link rel="stylesheet/less" href="common.less">
+        <script src='./less.min.js'></script>
+        <!-- 编译less文件 -->
+    </head>
+    <body>
+        <div id="wrapper">
+        <!-- 头部开始 header start-->
+            <div class="top-nav ">
+              <div class="top-nav-inner">
+                <div class="float-clearfix w">
+                    <div class="site-box none-sm ">
+                        <ul>
+                            <li >
+                                <i class='icon icon-Location'></i>
+                                <span>上海</span>
+                            </li>
+                            <li >[切换] </li>
+                            <li >上海体验店</li>
+                        </ul>
+                    </div>
+                    <div class="top-menu fr none-sm">
+                        <ul>
+                            <li ><a href="#">登录</a></li>
+                            <li ><a href="#">注册</a></li>
+                            <li ><a href="#">我的汉森</a></li>
+                            <li >
+                                <a href="#">
+                                    <i class='icon icon-car'></i>
+                                    <span>我的购物车 </span>
+                                    <span>(</span>
+                                    <span>0</span>
+                                    <span>)</span>
+                                </a>
+                            </li>
+                            <li ><a href="#">在线客服</a></li>
+                        </ul>
+                    </div>
+                </div>
+               </div>
+                <div class="middle-nav w float-clearfix none-sm">
+                       <div class="logo-box">
+                           <a href="#">
+                               <i class='icon icon-caret'></i>
+                           </a>
+                       </div>
+                       <div class="search-inner">
+                           <form action="">
+                               <input type="text" placeholder='抽屉框'>
+                               <a href="#">
+                                   <i class='icon icon-search'></i>
+                               </a>
+                           </form>
+                               <ul>
+                                   <li><a href="#">床</a></li>
+                                   <li><a href="#">实木床</a></li>
+                                   <li><a href="#">沙发</a></li>
+                                   <li><a href="#">床垫</a></li>
+                               </ul>
+                       </div>
+                   </div>
+                     <div class="nav-bar none-sm">
+                             <div class="w">
+                                  <ul>
+                                       <li>
+                                           <a href="#">家装灵感</a>
+                                           <div class="list-page">
+                                               <div class="first-category">
+                                                 <ul>
+                                                      <li><a href="#">床</a></li>
+                                                      <li><a href="#">床垫</a></li>
+                                                      <li><a href="#">衣柜</a></li>
+                                                      <li><a href="#">化妆台</a></li>
+                                                      <li><a href="#">衣架、置物架</a></li>
+                                                 </ul>
+                                               </div>
+                                               <div class="second-category">
+                                              <ul>
+                                                   <li>
+                                                    <a href="#"><img src="https://res.hanssem.com.cn/resources/2017/7/6/14993094903587531.png?version=000000" alt=""></a>
+                                                 </li>
+                                                  <li>
+                                                    <a href="#"><img src="images/index/product-6.png" alt=""></a>
+                                                 </li>
+                                              </ul>
+                                               </div>
+                                           </div>
+                                       </li>
+                                       <li>
+                                           <a href="#">整体家装</a>
+                                       </li>
+                                       <li>
+                                           <a href="#">厨房</a>
+                                       </li>
+                                       <li>
+                                           <a href="#">卫浴</a>
+                                       </li>
+                                       <li>
+                                           <a href="#">卧室</a>
+                                       </li>
+                                       <li>
+                                           <a href="#">客厅</a>
+                                       </li>
+                                       <li>
+                                           <a href="#">餐厅</a>
+                                       </li>
+                                       <li>
+                                           <a href="#">书房</a>
+                                       </li>
+                                       <li>
+                                           <a href="#">儿童房</a>
+                                       </li>
+                                       <li>
+                                           <a href="#">生活用品</a>
+                                       </li>
+                                    </ul>
+                             </div>
+                     </div>
+                     <!-- 手机端导航 -->
+                <div class="middle-menu block-sm none">
+                    <div class="middle-menu-left">
+                    <i class='icon icon-arrow'></i>
+                    </div>
+                    <div class="middle-menu-right">
+                      <i class='icon icon-search'></i>
+                      <i class='icon icon-car'></i>
+                    </div>
+                    <div class="middle-menu-center">
+                    <i class='icon icon-hanssem'></i>
+                    </div>
+                </div>
+            </div>
+            <!-- 头部结束header end -->
+            <!-- 内容部分 container start-->
+            <section class="container float-clearfix">
+                <!-- 首页轮播图 -->
+                <article class="article">
+                 <div class="scroll events-scroll-loop-false index-kv">
+                        <div class="scroller-wrap">
+                            <ul >
+                                <li >
+                                    <a>
+                                     <img src="images/index/kv-pc-1.jpg" >
+                                    </a>
+                                </li>
+                                <li ><a>
+                                   <img src="images/index/kv-pc-1.jpg" >
+                                </a>
+                                </li>
+                                <li ><a>
+                                    <img src="images/index/kv-pc-1.jpg" >
+                                </a>
+                                </li>
+                                <li><a>
+                                    <img src="images/index/kv-pc-1.jpg" >
+                                </a>
+                                </li>
+                                <li ><a>
+                                   <img src="images/index/kv-pc-1.jpg" >
+                                </a>
+                                </li>
+                                <li ><a>
+                                   <img src="images/index/kv-pc-1.jpg" >
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scroll-dots float-clearfix" >
+                            <a class="">1<i></i></a>
+                            <a class="">2<i></i></a>
+                            <a class="active">3<i></i></a>
+                        </div>
+                        <div class="scroll-btn-prev">         
+                          <a>
+                          <i>&lt;</i>
+                          </a>          
+                        </div>
+                        <div class="scroll-btn-next is-disabled">     
+                              <a>
+                              <i>&gt;</i>
+                              </a>      
+                        </div>
+                    </div>
+                </article>
+               <!--侧边导航 start-->
+                <div class="side-nav  float-clearfix">
+                    <div class="navigation-box  float-clearfix">
+                      <div class="slide-box">
+                        <a href="#">
+                          <i class='icon icon-home'></i>
+                         </a>
+                        <a href="#"><p>家装灵感</p></a>
+                      </div>
+                       <div class="slide-box">
+                        <a href="#" >
+                          <i class='icon icon-home-1 '></i>
+                        </a>
+                        <a href="#"><p>整体家装</p></a>
+                      </div>
+                       <div class="slide-box">
+                        <a href="#">
+                          <i class='icon icon-home-2'></i>
+                        </a>
+                        <a href="#"><p>厨房</p></a>
+                      </div>
+                       <div class="slide-box">
+                        <a href="#">
+                          <i class='icon icon-home-3'></i>
+                        </a>
+                        <a href="#"><p>卫浴</p></a>
+                      </div>
+                       <div class="slide-box">
+                        <a href="#">
+                          <i class='icon icon-home-4'></i>
+                          </a>
+                        <a href="#"><p>卧室</p></a>
+                      </div>
+                       <div class="slide-box">
+                        <a href="#">
+                          <i class='icon icon-home-5'></i>
+                     </a>
+                        <a href="#"><p>客厅</p></a>
+                      </div>
+                       <div class="slide-box">
+                        <a href="#">
+                          <i class='icon icon-home-6'></i>
+                        </a>
+                        <a href="#"> <p>餐厅</p></a>
+                      </div>
+                       <div class="slide-box">
+                        <a href="#">
+                          <i class='icon icon-home-7 '></i>
+                         </a> 
+                        <a href="#"><p>书房</p></a>
+                      </div>
+                       <div class="slide-box none-sm">
+                        <a href="#">
+                          <i class='icon icon-home-8 '></i>
+                         </a> 
+                        <a href="#"><p>儿童房</p></a>
+                      </div>
+                       <div class="slide-box none-sm">
+                        <a href="#">
+                          <i class='icon icon-home-9'></i>
+                         </a>
+                        <a href="#"> <p>生活用品</p></a>
+                      </div>
+                    </div>
+                       <div class="arrow block-sm">
+                        <i class='icon icon-arrow-up'></i>
+                      </div>
+                </div>
+                <!-- 侧边导航 end -->
+
+                <!-- 空间提案vr  start-->
+                <article class="article">
+                    <!--空间提案-->
+                    <div class="space-proposal w float-clearfix none-sm">
+                        <div class="space-txt">
+                            <h3>空间提案VR</h3>
+                            <div class="detial-txt">
+                                迎合您生活风格的VR体验空间方案
+                                <a href="#">
+                                    查看更多>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="space-vr">
+                            <div>
+                                <a href="#">
+                                    <i class='icon icon-vr'></i>
+                                    <img src="images/index/VR-1.png">
+                                    <p>
+                                        124m² 3房1卫 7-13岁 STUDENT
+                                        <span>E988 Neutral 现代式古典风</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <i class='icon icon-vr'></i>
+                                    <img src="images/index/VR-2.jpg">
+                                    <p>
+                                        124m² 3房1卫 7-13岁 STUDENT
+                                        <span>E988 Neutral 现代式古典风</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+               <!-- 空间提案vr end -->
+                <!--装修施工 start-->
+                <article>
+                    <div class="renovation w index-similar">
+                        <div class="txt">
+                            <h3>
+                                <i class='icon inon-zhuang'></i>
+                                装修施工
+                            </h3>
+                            <p>迎合各种生活风格的装修套餐</p>
+                        </div>
+                        <div class="renovation-img">
+                            <img src="https://res.hanssem.com.cn/resources/ckimg/images/%E9%A6%96%E9%A1%B5banner/%E9%9D%9E%E9%94%80%E5%94%AE%E9%A2%86%E5%9F%9F/shouye_zhuangxiu-01.jpg" alt="">
+                        </div>
+                    </div>
+                </article>
+                <!-- 装修施工end -->
+                <!--厨房&卫浴 start-->
+                <article>
+                    <div class="kitchen-bathroom w index-similar">
+                        <div class="txt">
+                            <h3>厨房&卫浴</h3>
+                            <p>顶级品质的厨房与卫浴空间
+                                <a href="#" class='none'>查看更多></a>
+                            </p>
+                        </div>
+                        <div class="scroll-title">
+                            <ul class='float-clearfix'>
+                                <li class='ischeck'>
+                                    <a >厨房</a>
+                                </li>
+                                <li>
+                                    <a >卫浴</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="kitchen-bathroom-img">
+                            <ul>
+                              <li class=''>
+                                <a href="#"><img src="https://res.hanssem.com.cn/resources/2017/6/26/14984661292534777.jpg" alt=""></a>
+                              </li>
+                               <li class=''>
+                                <a href="#"><img src="https://res.hanssem.com.cn/resources/2017/6/26/14984662234948734.jpg"></a>
+                              </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <!-- 书房卫浴end -->
+                <!--家具产品 start-->
+                <article>
+                    <div class="furniture-products w float-clearfix index-similar">
+                        <div class="txt">
+                            <h3>家具产品</h3>
+                            <p>与我家百搭的空间套装
+                                <a href="#">查看更多></a>
+                            </p>
+                        </div>
+                        <div class="scroll-title">
+                            <ul class='float-clearfix'>
+                                <li class='ischeck'>
+                                    <a>厨房</a>
+                                </li>
+                                <li>
+                                    <a>客厅</a>
+                                </li>
+                                <li>
+                                    <a>餐厅</a>
+                                </li>
+                                <li>
+                                    <a>书房</a>
+                                </li>
+                                <li>
+                                    <a>儿童房</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="kitchen-bathroom-img none-sm">
+                            <a href="#"><img src="https://res.hanssem.com.cn/resources/2017/6/26/14984664058471463.jpg" alt=""></a>
+                        </div>
+                        <div class="list-of-goods">
+                            <div class="goods">
+                              <div class="list">
+                               <a>
+                                  <img src="https://res.hanssem.com.cn/resources/2017/6/23/14981973016296879_314X314.jpg" alt="">
+                                <p>HANSSEM汉森 卧室美式双人床 高箱褐色欧式 1.5，1.8米实木床</p>
+                                <span>9999.80</span>
+                               </a>
+                            </div>
+                            <div class="list">
+                                <a >
+                                  <img src="https://res.hanssem.com.cn/resources/2017/6/23/14981973016296879_314X314.jpg" alt="">
+                                <p>HANSSEM汉森 卧室美式双人床 高箱褐色欧式 1.5，1.8米实木床</p>
+                                <span>9999.80</span>
+                                </a>
+                            </div>
+                            <div class="list">
+                           <a>
+                                  <img src="https://res.hanssem.com.cn/resources/2017/6/23/14981973016296879_314X314.jpg" alt="">
+                                <p>HANSSEM汉森 卧室美式双人床 高箱褐色欧式 1.5，1.8米实木床</p>
+                                <span>9999.80</span>
+                           </a>
+                            </div>
+                            <div class="list">
+                                <a>
+                                  <img src="https://res.hanssem.com.cn/resources/2017/6/23/14981973016296879_314X314.jpg" alt="">
+                                <p>HANSSEM汉森 卧室美式双人床 高箱褐色欧式 1.5，1.8米实木床</p>
+                                <span>9999.80</span>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                 <!--家具产品 end-->
+                <article>
+                <!-- 生活用品  start-->
+                    <div class="articles-daily-use float-clearfix index-similar">
+                        <div class="furniture-products w">
+                            <div class="txt">
+                                <h3>生活用品</h3>
+                                <p>点缀空间的各类生活用品
+                                    <a href="#">查看更多></a>
+                                </p>
+                            </div>
+                            <div class="scroll-title">
+                                <ul class='float-clearfix'>
+                                    <li class='ischeck'>
+                                        <a>收纳</a>
+                                    </li>
+                                    <li>
+                                        <a>厨房用品</a>
+                                    </li>
+                                    <li>
+                                        <a>洗漱用品</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="kitchen-bathroom-img none-sm">
+                                <a href="#"><img src="https://res.hanssem.com.cn/resources/2017/6/26/14984669779282706.jpg" alt=""></a>
+                            </div>
+                            <div class="list-of-goods">
+                                <div class="goods">
+                                  <div class="list">
+                               <a>
+                                   <img src="https://res.hanssem.com.cn/resources/2017/7/5/14992495494697988_314X314.jpg" alt="">
+                                    <p>亨利2 整理箱</p>
+                                    <span>69.80</span>
+                               </a>
+                                </div>
+                                <div class="list">
+                                    <a>
+                                      <img src="https://res.hanssem.com.cn/resources/2017/7/5/14992489471923185_314X314.jpg">
+                                    <p>亨利2 挂袋</p>
+                                    <span>65.80</span>
+                                    </a>
+                                </div>
+                                <div class="list">
+                                <a>   
+                                 <img src="https://res.hanssem.com.cn/resources/2017/7/5/14992474862092970_314X314.jpg" alt="">
+                                    <p>泽恩内衣收纳箱</p>
+                                    <span>55.80</span></a>
+                                </div>
+                                <div class="list">
+                                <a>
+                                      <img src="https://res.hanssem.com.cn/resources/2017/6/30/14987943909841024_314X314.jpg" alt="">
+                                    <p>贴线收纳箱</p>
+                                    <span>45.5</span>
+                                </a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <div class="footer-banner w " style='margin-top:98px;'>
+                  <img src="images/index/footer-top.png" >
+                </div>
+            </section>
+          <!-- 内容部分 end -->
+
+            <!-- 底部导航部分 -->
+            <footer class="footer">
+                    <div class="footer-content">
+                        <div class="fotter-top float-clearfix none-sm  w ">
+                            <dl>
+                                <dt><i class='icon icon-hanssem'></i></dt>
+                            </dl>
+                            <dl>
+                            <dt><a href="#">品牌故事</a></dt>
+                            <dt><a href="#">关于汉森</a></dt>
+                            <dt><a href="#">商场指南</a></dt>
+                            </dl>
+                            <dl>
+                            <dt><a href="#">帮助中心</a></dt>
+                            <dt><a href="#">常见问题</a></dt>
+                            <dt><a href="#">服务条款</a></dt>
+                            <dt><a href="#">送货服务</a></dt>
+                            <dt><a href="#">退换货服务</a></dt>
+                            </dl>
+                            <dl>
+                            <dt><a href="#">实体店</a></dt>
+                            <dt><a href="#">汉森上海店</a></dt>
+                            <dt><a href="#">卖场电话：400-006-3388</a></dt>
+                            <dt><a href="#">服务时间：10:00-22:00</a></dt>
+                            <dt><a href="#">地址：上海市长宁区长宁路88号KING88 1层</a></dt>
+                            </dl>
+                            <dl>
+                            <dt>联系我们</dt>
+                            <dt>400-006-3388</dt>
+                            <dt>周一至周日09:00-18:00</dt>
+                            </dl>
+                        </div>
+                        <div class="fotter-bottom float-clearfix">
+                            <div class="fotter-bottom-left none-sm">
+                                <ul>
+                                    <li><a href="#">法律申明</a></li>
+                                    <li><a href="#">隐私权政策</a></li>
+                                </ul>
+                            </div>
+                            <div class="fotter-bottom-right">
+                                <p>ICP ： 沪ICP备17023606号</p>
+                                <p>Copyright © 2017 HANSSEM Co. Ltd. All rights reserved
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            </footer>
+            <!--右边固定导航-->
+            <div class="suspension-box none-sm">
+                <div class="slide-box">
+                    <a href="#">
+                        <i class='icon icon-account'></i>
+                    </a>
+                    <a href="#">账户</a>
+                </div>
+                <div class="slide-box is-cart">
+                    <a href="#">
+                        <i class='icon icon-car'></i>
+                    </a>
+                    <a href="#">购物车</a>
+                </div>
+                <div class="slide-box">
+                    <a href="#">
+                        <i class='icon icon-service'></i>
+                    </a>
+                    <a href="#">在线客服</a>
+                </div>
+                <div class="slide-box">
+                    <a href="#">
+                        <i class='icon icon-design'></i>
+                    </a>
+                    <a href="#">自主设计</a>
+                </div>
+                <div class="slide-box">
+                    <a href="#">
+                        <i class='icon icon-appointment'></i>
+                    </a>
+                    <a href="#">商城预约</a>
+                </div>
+                <div class="slide-box">
+                    <a href="#">
+                        <i class='icon icon-gotop'></i>
+                    </a>
+                    <a href="#">回到顶部</a>
+                </div>
+            </div>
+        </div>
+<script src='index.js'></script>
+        <!-- 公共部分放最下，如回到顶部，弹出层等 -->
+    </body>
+</html>

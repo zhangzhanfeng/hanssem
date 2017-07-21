@@ -1,0 +1,7 @@
+@charset "utf-8";
+.dialog-opacity {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+}
+.dialog-opacity-transparent {
+  background-color: transparent;
+}

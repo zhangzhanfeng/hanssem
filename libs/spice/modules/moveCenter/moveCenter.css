@@ -1,0 +1,105 @@
+@charset "utf-8";
+/*@disScale : 调整两侧内容的比例(此值越大,两侧内容比例越大) 建议0.5-1之间进行取值*/
+/*@minScale : 限制最外侧内容的比例(最外侧内容比例永远>=此值)*/
+.spice-md-movecenter .scroller-wrap ul {
+  width: 100%;
+  overflow: hidden;
+}
+.spice-md-movecenter .scroller-wrap ul li {
+  width: 0 ;
+  overflow: hidden;
+  /*height : 100%;
+				box-sizing:border-box;*/
+}
+.spice-md-movecenter .scroller-wrap ul li a {
+  padding: 0 ;
+  display: block;
+  margin: 0 auto;
+}
+.spice-md-movecenter .scroller-wrap ul li .spice-md-movecenter-text h3 {
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+.spice-md-movecenter .scroller-wrap ul li .spice-md-movecenter-text p {
+  font-size: 14px;
+  text-align: center;
+}
+.spice-md-movecenter .scroller-wrap .spice-md-movecenter-text h3 {
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+.spice-md-movecenter .scroller-wrap .spice-md-movecenter-text p {
+  font-size: 14px;
+  text-align: center;
+}
+.spice-md-movecenter-3 .scroller-wrap ul li:first-child,
+.spice-md-movecenter-3 .scroller-wrap ul li:nth-child(2),
+.spice-md-movecenter-3 .scroller-wrap ul li:nth-child(3) {
+  width: 33.33333333%;
+}
+.spice-md-movecenter-3 .scroller-wrap ul li:first-child a,
+.spice-md-movecenter-3 .scroller-wrap ul li:nth-child(3) a {
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  opacity: 0.5;
+}
+.spice-md-movecenter-5 .scroller-wrap ul li:first-child,
+.spice-md-movecenter-5 .scroller-wrap ul li:nth-child(2),
+.spice-md-movecenter-5 .scroller-wrap ul li:nth-child(3),
+.spice-md-movecenter-5 .scroller-wrap ul li:nth-child(4),
+.spice-md-movecenter-5 .scroller-wrap ul li:nth-child(5) {
+  width: 20%;
+}
+.spice-md-movecenter-5 .scroller-wrap ul li:first-child a,
+.spice-md-movecenter-5 .scroller-wrap ul li:nth-child(5) a {
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  opacity: 0.5;
+}
+.spice-md-movecenter-5 .scroller-wrap ul li:nth-child(2) a,
+.spice-md-movecenter-5 .scroller-wrap ul li:nth-child(4) a {
+  transform: scale(0.67479675);
+  -webkit-transform: scale(0.67479675);
+  -moz-transform: scale(0.67479675);
+  -ms-transform: scale(0.67479675);
+  -o-transform: scale(0.67479675);
+  opacity: 0.67479675;
+}
+.spice-md-movecenter-5-equalHeight .scroller-wrap ul li:first-child,
+.spice-md-movecenter-5-equalHeight .scroller-wrap ul li:nth-child(2),
+.spice-md-movecenter-5-equalHeight .scroller-wrap ul li:nth-child(3),
+.spice-md-movecenter-5-equalHeight .scroller-wrap ul li:nth-child(4),
+.spice-md-movecenter-5-equalHeight .scroller-wrap ul li:nth-child(5) {
+  width: 20%;
+}
+.spice-md-movecenter-5-equalHeight .scroller-wrap ul li:first-child a,
+.spice-md-movecenter-5-equalHeight .scroller-wrap ul li:nth-child(2) a,
+.spice-md-movecenter-5-equalHeight .scroller-wrap ul li:nth-child(4) a,
+.spice-md-movecenter-5-equalHeight .scroller-wrap ul li:nth-child(5) a {
+  transform: scale(0.67479675);
+  -webkit-transform: scale(0.67479675);
+  -moz-transform: scale(0.67479675);
+  -ms-transform: scale(0.67479675);
+  -o-transform: scale(0.67479675);
+  opacity: 0.67479675;
+}
+.spice-md-movecenter-3-notsetsize .scroller-wrap ul li:first-child,
+.spice-md-movecenter-3-notsetsize .scroller-wrap ul li:nth-child(2),
+.spice-md-movecenter-3-notsetsize .scroller-wrap ul li:nth-child(3) {
+  width: 33.33333333%;
+}
+.spice-md-movecenter-5-notsetsize .scroller-wrap ul li:first-child,
+.spice-md-movecenter-5-notsetsize .scroller-wrap ul li:nth-child(2),
+.spice-md-movecenter-5-notsetsize .scroller-wrap ul li:nth-child(3),
+.spice-md-movecenter-5-notsetsize .scroller-wrap ul li:nth-child(4),
+.spice-md-movecenter-5-notsetsize .scroller-wrap ul li:nth-child(5) {
+  width: 20%;
+}

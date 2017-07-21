@@ -1,0 +1,133 @@
+// 首页公共部分提取
+.index-similar{
+.txt{
+    text-align:center;
+    p{
+      margin:10px 0;
+      position:relative;
+    }
+    a{
+      position:absolute;
+      right:0;
+      top:0;
+      color:#000;
+  }
+}
+.scroll-title{
+ overflow:hidden;
+  ul{
+    text-align: center;
+    li{
+      display:inline-block;
+      border-bottom:3px solid #ffffff;
+      &.ischeck{
+        border-color:#AA2A29;
+      }
+      a{
+        font-size: 18px;
+        color: #666;
+        display: block;
+        padding: 12px 32px;
+       }
+     }
+   }
+ }
+   .list-of-goods{
+    margin-top:20px;
+    overflow:hidden;
+    .list{
+      width: 25%;
+      float: left;
+      p{
+        margin:10px 0px 5px 0;
+        line-height:20px;
+      }
+      span{
+        font-size:16px;
+        font-weight: bold;
+      }
+      &:first-child{
+        padding:0 16.5px 0 0 ;
+      }
+      &:nth-child(2){
+        padding:0  11px 0 5px;
+      }
+      &:nth-child(3){
+        padding:0 5px 0 11px ;
+      }
+      &:last-child{
+        padding:0  0 0 16.5px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .w{
+    max-width: 100%;
+    width: 100%;
+    background: #fff;
+    margin-top: 0px;
+  }
+  .index-similar{
+    background-color: #fff;
+    margin-top:0px;
+    .txt{
+      text-align:left;
+      border-bottom: none;
+      margin-bottom: 20px;
+      padding: 20px 12px 0 12px;
+      h3 {
+        font-size: 16px;
+      }
+      img{
+        width: 100%;
+      }
+      p{
+        display:none;
+      }
+    }
+    .scroll-title{
+      overflow-x:scroll;
+      ul{
+        text-align: left;
+        width:200%;
+        overflow: auto;
+        li{
+          display:inline-block;
+          border-bottom:3px solid #ffffff;
+          &.ischeck{
+            border-color:#AA2A29;
+          }
+          a{
+            color: #666;
+            display: block;
+            font-size: 14px;
+            padding: 6px 26px;
+          }
+        }
+      }
+    }
+    .list-of-goods{
+        margin-top:20px;
+        width: 100%;
+        overflow-x:scroll;
+      .goods{
+        width: 3000px;
+      .list{
+        max-width:200px;
+        width: 50%;
+        float: left;
+        p{
+          margin:10px 0px 5px 0;
+          line-height:18px;
+          font-size:12px;
+        }
+        span{
+          font-size:14px;
+          font-weight: bold;
+        }
+        }
+      }
+    }
+  }
+}
