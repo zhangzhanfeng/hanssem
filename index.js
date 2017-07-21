@@ -43,6 +43,7 @@ for(var i = 0;i <titiesLis.length;i++){
             imgLis[i].style.display='none'
         }
         this.className='ischeck';
+        imgLis[idx].style.transition='display 6s';
         imgLis[idx].style.display='block';
     })
   }
