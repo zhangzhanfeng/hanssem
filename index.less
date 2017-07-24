@@ -45,7 +45,7 @@ body{
 }
 // 默认样式
 p{
-  padding: 0 0 0 0;
+  padding: 0!important;
 }
 .check-none{
   display:none;
@@ -165,39 +165,49 @@ p{
     box-sizing:border-box;
     ul{
       position:relative;
+      font-size:0;
       >li{
         display:inline-block;
+        border: 1px solid #fff;
+        border-bottom:none;
         zoom: 1;
-        a:first-child{
-          padding: 10px 25px;
-          font-size: 16px;
-          color: #666;
-          background: #fff;
-          position: relative;
-          border: 1px solid #fff;
-          border-bottom: none;
-          display:block;
+        &.on {
+        border: 1px solid #000;
+        border-bottom:none;
+         }
+        a{
+            padding: 10px 25.8px;
+            font-size: 16px;
+            color: #666;
+            display:block;
+            background: #fff;
+            position: relative;
+            border: 1px solid #fff;
+            border-bottom: none;
         }
         .list-page{
           position:absolute;
           top:100%;
           left:0;
           width: 100%;
-          z-index:1;
+          z-index:10;
+          display:none;
           border: 1px solid #000;
           padding: 26px 0 20px 29px;
           background-color: #fff;
            .first-category{
+            margin-right:20px;
             .fl();
              ul{
               li{
                 width: 190px;
                 border-bottom:1px solid #e6e6e6;
-                float: none;
+                float:none;
                 display: block;
                 a{
-                 padding: 6px 18px;
-                  font-size:14px;
+                 padding: 9px 18px;
+                 display: block;
+                 font-size:14px;
                 }
                 &:last-child{
                   border-bottom:none;
@@ -206,9 +216,13 @@ p{
               }
             }
             .second-category{
+              margin-left:5px;
               .fl();
                 li{
                   .fl();
+                  a{
+                    padding: 10px 5px;
+                  }
               }
             }
          }
@@ -277,7 +291,7 @@ p{
     height: 100%;
     width: 36px;
     background: #F7F7F7;
-    display:none;
+    // display:none;
     .navigation-box{
       position:absolute;
       top:50%;
@@ -288,7 +302,25 @@ p{
       position: relative;
       margin: 10px 0;
       &:hover{
-        background-color:rgba(0,0,0,.3);
+        background-color:rgba(0,0,0,.5);
+      }
+      &:hover a:nth-child(1):after{
+         display: block;
+            position: absolute;
+            content: '';
+            border: none;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-right: 6px solid #E6E6E6;
+            width: 0;
+            height: 0;
+            zoom: 1;
+            vertical-align: middle;
+            margin-left: 3px;
+            top: 50%;
+            margin-top: -12px;
+            left: 28px;
+            z-index: 12;
       }
        &:hover a:nth-child(2){
         display:block;
@@ -503,7 +535,10 @@ p{
   margin-top:110px;
   .kitchen-bathroom-img{
     li{
-
+      display:none;
+    &.ischeck{
+        display:block;
+      }
     }
   }
 }
@@ -579,11 +614,15 @@ p{
       .fotter-bottom-right{
         .fr();
         p{
+          margin: 0 0 0px;
           .fl();
         }
       }
     }
   }
+}
+.footer-banner{
+  margin-top:98px;
 }
 @media screen and (max-width: 1024px) {
   body{
@@ -600,6 +639,7 @@ p{
     bottom:14px;
    }
   }
+  // 侧边栏固定
   .side-nav{
      margin:6px 0;
      z-index:999;
@@ -608,7 +648,6 @@ p{
      position:static;
      width: 100%;
      display:block;
-
   .navigation-box{
       position:static;
       top: 0; 
@@ -624,6 +663,9 @@ p{
       &:hover{
         background-color:rgba(0,0,0,0.1);
       }
+      &:hover a:nth-child(1):after{
+          display: none;
+    }
   a{
     &:nth-child(1){
      height:36px;
@@ -664,22 +706,23 @@ p{
       .icon-home-2{
         width: 41px;
         height: 34px;
-        background-position:-167px -131px;
+       background-position:-302px -131px;
       }
       .icon-home-3{
-        width: 44px;
+        width: 42px;
         height: 34px;
-         background-position:-212px -131px;
+        background-position:-259px -131px;
       }
       .icon-home-4{
         width: 38px;
         height: 34px;
-        background-position:-259px -131px;
+        background-position:-212px -131px;
       }
       .icon-home-5{
         width: 40px;
         height: 34px;
-        background-position:-302px -131px;
+         background-position:-167px -131px;
+        
       }
       .icon-home-6{
         width: 37px;
@@ -708,16 +751,17 @@ p{
          background-position:-130px -131px;
       } 
         &:hover .icon-home-2{
-            background-position:-212px -131px;
+            background-position:-302px -131px;
       } 
         &:hover .icon-home-3{
-          background-position:-708px -65px;
-      } 
-        &:hover .icon-home-4{
           background-position:-259px -131px;
       } 
+        &:hover .icon-home-4{
+          
+          background-position:-212px -131px;
+      } 
         &:hover .icon-home-5{
-        background-position:-302px -131px;
+          background-position:-167px -131px;
       } 
         &:hover .icon-home-6{
           background-position:-347px -131px;
@@ -733,7 +777,7 @@ p{
       } 
      }
     }
-       .arrow{
+   .arrow{
          padding-top:7px;
          padding-bottom:15px;
       .icon-arrow-up{
@@ -744,13 +788,14 @@ p{
       }
     }
   }
+  // 底部部分
   .footer{
-    margin: 0;
-    padding: 0;
+    margin-top: 0;
+    background-color: #fff;
     border-top:none;
     .footer-content{
       .fotter-bottom{
-        padding:12px 0 12px 0;
+        padding:7px 0 7px 0;
         border-top:1px solid #f7f7f7;
         .fotter-bottom-left{
           li{
@@ -765,12 +810,48 @@ p{
           p{
             text-align: center;
             float:none;
-            padding: 0;
+            margin: 0;
           }
         }
       }
     }
   }
+   .icon-products{
+    width: 10px;
+    height: 18px;
+    background-position: -265px -197px;
+    float: left;
+    margin-right:5px;
+    margin-top:4px;
+  }
+  .icon-furniture{
+   width: 20px;
+    height: 14px;
+    background-position: -236px -197px;
+    float: left;
+     margin-right:5px;
+     margin-top:4px;
+  }
+  .icon-kitchen{
+    width: 20px;
+    height: 16px;
+    background-position: -207px -197px;
+    float: left;
+     margin-right:5px;
+     margin-top:4px;
+  }
+  .icon-zhuang{
+    width: 16px;
+    height: 18px;
+    background-position: -182px -197px;
+    float: left;
+     margin-right:5px;
+     margin-top:4px;
+  }
+  .footer-banner{
+     margin-top:6px!important;
+     margin-bottom:6px!important;
+}
 }
 //侧边右
 .suspension-box{
@@ -826,7 +907,7 @@ p{
     }
     &:nth-child(2){
       width: 30px;
-      display:block;
+      display:none;
       position:absolute;
       left:50%;
       top:50%;
@@ -834,8 +915,9 @@ p{
       color: #fff!important;
       font-size: 12px;
     }
-     &:.is-cart{
+     &.is-cart{
         width:100%;
+        text-align:center;
       }
 
   }
@@ -849,12 +931,11 @@ p{
     background-color:rgba(0,0,0,.3);
     color:#fff;
    }
-  // &:hover a:nth-child(2){
-  //   display:block;
-  //   }
+  &:hover a:nth-child(2){
+    display:block;
+    }
   }
-}
-
+ }
 
 
 
