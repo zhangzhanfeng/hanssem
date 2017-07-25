@@ -1,20 +1,26 @@
 // 首页公共部分提取
 .index-similar{
+  // 用的时候要加上最外面的这个类
+  // 头部文字
 .txt{
     text-align:center;
-    p{
-      margin:10px 0;
+   .detial-txt{
       position:relative;
-    }
-    a{
-      position:absolute;
-      right:0;
-      top:0;
-      color:#000;
-  }
+       p{
+        margin:10px 0;
+       }
+      a{
+        position:absolute;
+        right:0;
+        top:0;
+        color:#666666;
+     }
+   }
 }
 .scroll-title{
+  // tab栏头部文字
  overflow:hidden;
+ border-top:1px solid #000;
   ul{
     text-align: center;
     li{
@@ -32,6 +38,12 @@
      }
    }
  }
+ .scroll-contenter{
+  .scroll-goods-list{
+    display:none;
+    &.ischeck{
+      display:block;
+    }
    .list-of-goods{
     margin-top:20px;
     overflow:hidden;
@@ -39,8 +51,16 @@
       width: 25%;
       float: left;
       p{
-        margin:10px 0px 5px 0;
-        line-height:20px;
+       margin:10px 0px 5px 0;
+      font-size: 14px;
+      color: #333333;
+      line-height: 22px;
+      display: block;
+      overflow: hidden;
+       text-overflow: ellipsis; 
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
       }
       span{
         font-size:16px;
@@ -60,6 +80,10 @@
       }
     }
   }
+  }
+ }
+ // 底部商品列表
+
 }
 @media screen and (max-width: 1024px) {
   .w{
@@ -70,7 +94,7 @@
   }
   .index-similar{
     background-color: #fff;
-    margin-top:0px;
+    margin-top:6px;
     .txt{
       text-align:left;
       border-bottom: none;
@@ -87,10 +111,12 @@
       }
     }
     .scroll-title{
+      border-top: none;
+      border-bottom: 1px solid #ccc;
       overflow-x:scroll;
       ul{
         text-align: left;
-        width:200%;
+        width:100%;
         overflow: auto;
         li{
           display:inline-block;
@@ -107,15 +133,17 @@
         }
       }
     }
-    .list-of-goods{
+     .scroll-contenter{
+      overflow-x:scroll;
+  .scroll-goods-list{
+    // width: 3000px;
+      .list-of-goods{
         margin-top:20px;
         width: 100%;
-        overflow-x:scroll;
       .goods{
-        width: 3000px;
       .list{
-        max-width:200px;
-        width: 50%;
+        max-width:40%;
+        padding-bottom:20px;
         float: left;
         p{
           margin:10px 0px 5px 0;
@@ -125,9 +153,11 @@
         span{
           font-size:14px;
           font-weight: bold;
-        }
+          }
         }
       }
+     }
     }
+   }
   }
 }
