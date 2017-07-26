@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 ul, ol {
   list-style: none;
 }
@@ -36,7 +37,7 @@ body{
 }
 //1倍雪碧图
 .icon{
-  background:  url(images/icon.png);
+  background:  url(../images/icon.png);
   display:block;
 }
 // 默认边距
@@ -53,6 +54,7 @@ p{
 .check-block{
   display:block;
 }
+
 //头部导航
 .top-nav{
   // 顶部导航
@@ -170,10 +172,11 @@ p{
         display:inline-block;
         border: 1px solid #fff;
         border-bottom:none;
+        z-index:10!important;
         zoom: 1;
         &.on {
         border: 1px solid #000;
-        border-bottom:none;
+        border-bottom:#fff;
          }
         a{
             padding: 10px 25.8px;
@@ -189,6 +192,7 @@ p{
           position:absolute;
           top:100%;
           left:0;
+          margin-top:-1px;
           width: 100%;
           z-index:10;
           display:none;
@@ -629,7 +633,7 @@ p{
   background-color: #f5f5f5;
   }
 .icon{
-  background:  url(images/icon@2x.png);
+  background:  url(../images/icon@2x.png);
   display:block;
   background-size:500px;
   }
@@ -852,6 +856,9 @@ p{
      margin-top:6px!important;
      margin-bottom:6px!important;
 }
+// .icon-arrow-right{
+  
+//   }
 }
 //侧边右
 .suspension-box{
@@ -936,6 +943,3 @@ p{
     }
   }
  }
-
-
-

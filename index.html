@@ -21,6 +21,8 @@
         <link rel="stylesheet" href="libs/spice/css/spice.css" />
         <!-- 字体图标样式，不需要时可不引用 -->
         <link rel="stylesheet" href="libs/spice/css/spice.icon.css" />
+        <script src='js/swiper.js'></script>
+        <link rel="stylesheet" href="css/swiper.css">
         <!--[if lt IE 9]>
             <link rel="stylesheet" href="libs/spice/css/spice.ie8.min.css" />
         <![endif]-->
@@ -54,9 +56,9 @@
             <script type="text/javascript" src="libs/spice/js/jquery.spice.ie7.min.js"></script>
         <![endif]-->
         <!-- 公共 JS 部分结束 -->
-        <link rel="stylesheet/less" href="index.less">
-        <link rel="stylesheet/less" href="common.less">
-        <script src='./less.min.js'></script>
+        <link rel="stylesheet/less" href="css/index.less">
+        <link rel="stylesheet/less" href="css/common.less">
+        <script src='js/less.min.js'></script>
         <!-- 编译less文件 -->
     </head>
     <body>
@@ -119,19 +121,21 @@
                              <div class="w">
                                   <ul>
                                        <li >
-                                           <a href="javascript:;">家装灵感</a>
+                                           <a href="javascript:;">家装灵感
+                                           <i class='icon-arrow-right'></i>
+                                           </a>
                                        </li>
                                        <li >
-                                           <a href="javascript:;">整体家装</a>
+                                           <a href="javascript:;">整体家装<i class='icon-arrow-right'></i></a>
                                        </li>
                                        <li >
-                                           <a href="javascript:;">厨房</a>
+                                           <a href="javascript:;">厨房<i class='icon-arrow-right'></i></a>
                                        </li>
                                        <li>
-                                           <a href="javascript:;">卫浴</a>
+                                           <a href="javascript:;">卫浴<i class='icon-arrow-right'></i></a>
                                        </li>
                                        <li class='title'>
-                                           <a href="javascript:;">卧室</a>
+                                           <a href="javascript:;">卧室<i class='icon-arrow-right'></i></a>
                                              <div class="list-page">
                                                <div class="first-category">
                                                  <ul>
@@ -155,7 +159,7 @@
                                            </div>
                                        </li>
                                        <li class='title'>
-                                           <a href="javascript:;">客厅</a>
+                                           <a href="javascript:;">客厅<i class='icon-arrow-right'></i></a>
                                                  <div class="list-page">
                                                <div class="first-category">
                                                  <ul>
@@ -178,7 +182,7 @@
                                            </div>
                                        </li>
                                        <li class='title'>
-                                           <a href="javascript:;">餐厅</a>
+                                           <a href="javascript:;">餐厅<i class='icon-arrow-right'></i></a>
                                                  <div class="list-page">
                                                <div class="first-category">
                                                  <ul>
@@ -201,7 +205,7 @@
                                            </div>
                                        </li>
                                        <li class='title'>
-                                           <a href="javascript:;">书房</a>
+                                           <a href="javascript:;">书房<i class='icon-arrow-right'></i></a>
                                                  <div class="list-page">
                                                <div class="first-category">
                                                  <ul>
@@ -224,7 +228,7 @@
                                            </div>
                                        </li>
                                        <li class='title'>
-                                           <a href="javascript:;">儿童房</a>
+                                           <a href="javascript:;">儿童房<i class='icon-arrow-right'></i></a>
                                                  <div class="list-page">
                                                <div class="first-category">
                                                  <ul>
@@ -256,7 +260,7 @@
                                            </div>
                                        </li>
                                        <li class='title'>
-                                           <a href="javascript:;">生活用品</a>
+                                           <a href="javascript:;">生活用品<i class='icon-arrow-right'></i></a>
                                                  <div class="list-page">
                                                <div class="first-category">
                                                  <ul>
@@ -528,7 +532,7 @@
                             <a href="javascript:;">查看更多></a>
                          </div>
                         </div>
-                        <div class="scroll-title">
+                        <div class="scroll-title ">
                             <ul class='float-clearfix'>
                                 <li class='ischeck'>
                                     <a>厨房</a>
@@ -547,7 +551,10 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="kitchen-bathroom-img none-sm">
+               <div class="scroll-contenter swiper-container gallery-thumbs float-clearfix">
+                <div class="scroll-goods-list swiper-wrapper">
+                <div class="swiper-slide">
+                     <div class="kitchen-bathroom-img none-sm">
                             <a href="javascript:;"><img src="https://res.hanssem.com.cn/resources/2017/6/26/14984664058471463.jpg" alt=""></a>
                         </div>
                         <div class="list-of-goods">
@@ -582,7 +589,157 @@
                             </div>
                             </div>
                         </div>
-                    </div>
+                     </div>
+                          <div class="swiper-slide">
+                     <div class="kitchen-bathroom-img none-sm">
+                            <a href="javascript:;"><img src="https://res.hanssem.com.cn/resources/2017/6/26/14984664058471463.jpg" alt=""></a>
+                        </div>
+                        <div class="list-of-goods">
+                            <div class="goods">
+                              <div class="list">
+                               <a>
+                                  <img src="https://res.hanssem.com.cn/resources/2017/6/23/14981973016296879_314X314.jpg" alt="">
+                                <p>HANSSEM汉森 卧室美式双人床 高箱褐色欧式 1.5，1.8米实木床</p>
+                                <span>9999.80</span>
+                               </a>
+                            </div>
+                            <div class="list">
+                                <a >
+                                  <img src="https://res.hanssem.com.cn/resources/2017/6/23/14981973016296879_314X314.jpg" alt="">
+                                <p>HANSSEM汉森 卧室美式双人床 高箱褐色欧式 1.5，1.8米实木床</p>
+                                <span>9999.80</span>
+                                </a>
+                            </div>
+                            <div class="list">
+                           <a>
+                                  <img src="https://res.hanssem.com.cn/resources/2017/6/23/14981973016296879_314X314.jpg" alt="">
+                                <p>HANSSEM汉森 卧室美式双人床 高箱褐色欧式 1.5，1.8米实木床</p>
+                                <span>9999.80</span>
+                           </a>
+                            </div>
+                            <div class="list">
+                                <a>
+                                  <img src="https://res.hanssem.com.cn/resources/2017/6/23/14981973016296879_314X314.jpg" alt="">
+                                <p>HANSSEM汉森 卧室美式双人床 高箱褐色欧式 1.5，1.8米实木床</p>
+                                <span>9999.80</span>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                     </div>
+                          <div class="swiper-slide">
+                     <div class="kitchen-bathroom-img none-sm">
+                            <a href="javascript:;"><img src="https://res.hanssem.com.cn/resources/2017/6/26/14984664058471463.jpg" alt=""></a>
+                        </div>
+                        <div class="list-of-goods">
+                            <div class="goods">
+                              <div class="list">
+                               <a>
+                                  <img src="https://res.hanssem.com.cn/resources/2017/6/23/14981973016296879_314X314.jpg" alt="">
+                                <p>HANSSEM汉森 卧室美式双人床 高箱褐色欧式 1.5，1.8米实木床</p>
+                                <span>9999.80</span>
+                               </a>
+                            </div>
+                            <div class="list">
+                                <a>
+                                  <img src="https://res.hanssem.com.cn/resources/2017/6/23/14981973016296879_314X314.jpg" alt="">
+                                <p>HANSSEM汉森 卧室美式双人床 高箱褐色欧式 1.5，1.8米实木床</p>
+                                <span>9999.80</span>
+                                </a>
+                            </div>
+                            <div class="list">
+                           <a>
+                                  <img src="https://res.hanssem.com.cn/resources/2017/6/23/14981973016296879_314X314.jpg" alt="">
+                                <p>HANSSEM汉森 卧室美式双人床 高箱褐色欧式 1.5，1.8米实木床</p>
+                                <span>9999.80</span>
+                           </a>
+                            </div>
+                            <div class="list">
+                                <a>
+                                  <img src="https://res.hanssem.com.cn/resources/2017/6/23/14981973016296879_314X314.jpg" alt="">
+                                <p>HANSSEM汉森 卧室美式双人床 高箱褐色欧式 1.5，1.8米实木床</p>
+                                <span>9999.80</span>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                     </div>
+                          <div class="swiper-slide">
+                     <div class="kitchen-bathroom-img none-sm">
+                            <a href="javascript:;"><img src="https://res.hanssem.com.cn/resources/2017/6/26/14984664058471463.jpg" alt=""></a>
+                        </div>
+                        <div class="list-of-goods">
+                            <div class="goods">
+                              <div class="list">
+                               <a>
+                                  <img src="https://res.hanssem.com.cn/resources/2017/6/23/14981973016296879_314X314.jpg" alt="">
+                                <p>HANSSEM汉森 卧室美式双人床 高箱褐色欧式 1.5，1.8米实木床</p>
+                                <span>9999.80</span>
+                               </a>
+                            </div>
+                            <div class="list">
+                                <a >
+                                  <img src="https://res.hanssem.com.cn/resources/2017/6/23/14981973016296879_314X314.jpg" alt="">
+                                <p>HANSSEM汉森 卧室美式双人床 高箱褐色欧式 1.5，1.8米实木床</p>
+                                <span>9999.80</span>
+                                </a>
+                            </div>
+                            <div class="list">
+                           <a>
+                                  <img src="https://res.hanssem.com.cn/resources/2017/6/23/14981973016296879_314X314.jpg" alt="">
+                                <p>HANSSEM汉森 卧室美式双人床 高箱褐色欧式 1.5，1.8米实木床</p>
+                                <span>9999.80</span>
+                           </a>
+                            </div>
+                            <div class="list">
+                                <a>
+                                  <img src="https://res.hanssem.com.cn/resources/2017/6/23/14981973016296879_314X314.jpg" alt="">
+                                <p>HANSSEM汉森 卧室美式双人床 高箱褐色欧式 1.5，1.8米实木床</p>
+                                <span>9999.80</span>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                     </div>
+                          <div class="swiper-slide">
+                     <div class="kitchen-bathroom-img none-sm">
+                            <a href="javascript:;"><img src="https://res.hanssem.com.cn/resources/2017/6/26/14984664058471463.jpg" alt=""></a>
+                        </div>
+                        <div class="list-of-goods">
+                            <div class="goods">
+                              <div class="list">
+                               <a>
+                                  <img src="https://res.hanssem.com.cn/resources/2017/6/23/14981973016296879_314X314.jpg" alt="">
+                                <p>HANSSEM汉森 卧室美式双人床 高箱褐色欧式 1.5，1.8米实木床</p>
+                                <span>9999.80</span>
+                               </a>
+                            </div>
+                            <div class="list">
+                                <a >
+                                  <img src="https://res.hanssem.com.cn/resources/2017/6/23/14981973016296879_314X314.jpg" alt="">
+                                <p>HANSSEM汉森 卧室美式双人床 高箱褐色欧式 1.5，1.8米实木床</p>
+                                <span>9999.80</span>
+                                </a>
+                            </div>
+                            <div class="list">
+                           <a>
+                                  <img src="https://res.hanssem.com.cn/resources/2017/6/23/14981973016296879_314X314.jpg" alt="">
+                                <p>HANSSEM汉森 卧室美式双人床 高箱褐色欧式 1.5，1.8米实木床</p>
+                                <span>9999.80</span>
+                           </a>
+                            </div>
+                            <div class="list">
+                                <a>
+                                  <img src="https://res.hanssem.com.cn/resources/2017/6/23/14981973016296879_314X314.jpg" alt="">
+                                <p>HANSSEM汉森 卧室美式双人床 高箱褐色欧式 1.5，1.8米实木床</p>
+                                <span>9999.80</span>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                     </div>
+                   </div>
+                 </div>
                 </article>
                  <!--家具产品 end-->
                 <article>
@@ -610,8 +767,8 @@
                                     </li>
                                 </ul>
                             </div>
-                        <div class="tab-content">
-                          <div class="tab-content-list">
+                        <div class="scroll-contenter">
+                          <div class="scroll-goods-list">
                               <div class="kitchen-bathroom-img none-sm">
                                 <a href="javascript:;"><img src="https://res.hanssem.com.cn/resources/2017/6/26/14984669779282706.jpg" alt=""></a>
                             </div>
@@ -647,80 +804,6 @@
                                 </div>
                             </div>
                           </div>
-                              <div class="tab-content-list">
-                              <div class="kitchen-bathroom-img none-sm">
-                                <a href="javascript:;"><img src="https://res.hanssem.com.cn/resources/2017/6/26/14984669779282706.jpg" alt=""></a>
-                            </div>
-                            <div class="list-of-goods">
-                                <div class="goods">
-                                  <div class="list">
-                               <a>
-                                   <img src="https://res.hanssem.com.cn/resources/2017/7/5/14992495494697988_314X314.jpg" alt="">
-                                    <p>亨利2 整理箱</p>
-                                    <span>69.80</span>
-                               </a>
-                                </div>
-                                <div class="list">
-                                    <a>
-                                      <img src="https://res.hanssem.com.cn/resources/2017/7/5/14992489471923185_314X314.jpg">
-                                    <p>亨利2 挂袋</p>
-                                    <span>65.80</span>
-                                    </a>
-                                </div>
-                                <div class="list">
-                                <a>   
-                                 <img src="https://res.hanssem.com.cn/resources/2017/7/5/14992474862092970_314X314.jpg" alt="">
-                                    <p>泽恩内衣收纳箱</p>
-                                    <span>55.80</span></a>
-                                </div>
-                                <div class="list">
-                                <a>
-                                      <img src="https://res.hanssem.com.cn/resources/2017/6/30/14987943909841024_314X314.jpg" alt="">
-                                    <p>贴线收纳箱</p>
-                                    <span>45.5</span>
-                                </a>
-                                </div>
-                                </div>
-                            </div>
-                          </div>
-                              <div class="tab-content-list">
-                              <div class="kitchen-bathroom-img none-sm">
-                                <a href="javascript:;"><img src="https://res.hanssem.com.cn/resources/2017/6/26/14984669779282706.jpg" alt=""></a>
-                            </div>
-                            <div class="list-of-goods">
-                                <div class="goods">
-                                  <div class="list">
-                               <a>
-                                   <img src="https://res.hanssem.com.cn/resources/2017/7/5/14992495494697988_314X314.jpg" alt="">
-                                    <p>亨利2 整理箱</p>
-                                    <span>69.80</span>
-                               </a>
-                                </div>
-                                <div class="list">
-                                    <a>
-                                      <img src="https://res.hanssem.com.cn/resources/2017/7/5/14992489471923185_314X314.jpg">
-                                    <p>亨利2 挂袋</p>
-                                    <span>65.80</span>
-                                    </a>
-                                </div>
-                                <div class="list">
-                                <a>   
-                                 <img src="https://res.hanssem.com.cn/resources/2017/7/5/14992474862092970_314X314.jpg" alt="">
-                                    <p>泽恩内衣收纳箱</p>
-                                    <span>55.80</span></a>
-                                </div>
-                                <div class="list">
-                                <a>
-                                      <img src="https://res.hanssem.com.cn/resources/2017/6/30/14987943909841024_314X314.jpg" alt="">
-                                    <p>贴线收纳箱</p>
-                                    <span>45.5</span>
-                                </a>
-                                </div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        </div>
                     </div>
                 </article>
                 <div class="footer-banner w">
@@ -737,19 +820,19 @@
                                 <dt><i class='icon icon-hanssem'></i></dt>
                             </dl>
                             <dl>
-                            <dt><a href="javascript:;">品牌故事</a></dt>
+                            <dt>品牌故事</dt>
                             <dt><a href="javascript:;">关于汉森</a></dt>
                             <dt><a href="javascript:;">商场指南</a></dt>
                             </dl>
                             <dl>
-                            <dt><a href="javascript:;">帮助中心</a></dt>
+                            <dt>帮助中心</dt>
                             <dt><a href="javascript:;">常见问题</a></dt>
                             <dt><a href="javascript:;">服务条款</a></dt>
                             <dt><a href="javascript:;">送货服务</a></dt>
                             <dt><a href="javascript:;">退换货服务</a></dt>
                             </dl>
                             <dl>
-                            <dt><a href="javascript:;">实体店</a></dt>
+                            <dt>实体店</dt>
                             <dt><a href="javascript:;">汉森上海店</a></dt>
                             <dt><a href="javascript:;">卖场电话：400-006-3388</a></dt>
                             <dt><a href="javascript:;">服务时间：10:00-22:00</a></dt>
@@ -816,7 +899,15 @@
                 </div>
             </div>
         </div>
-<script src='index.js'></script>
+<script src='js/index.js'></script>
+ <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+    </script>
+
+
 
         <!-- 公共部分放最下，如回到顶部，弹出层等 -->
     </body>
